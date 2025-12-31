@@ -235,8 +235,8 @@ function moveContactInfo() {
     Object.assign(contactInfo.style, {
       position: 'absolute',
       top: '27%',
-      left: '52%',
-      transform: 'translateX(-50%)',
+      left: '30%',
+      transform: 'none',
       bottom: 'auto',
       zIndex: '15',
       flexDirection: 'column',
