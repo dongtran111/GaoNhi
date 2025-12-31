@@ -482,12 +482,9 @@ header .bio {
     display: none !important;
   }
 
-  /* Không cần floating image trên mobile khi hover */
-  .floating-image {
-    display: none;
-  }
 
 }
+
 
 
 
