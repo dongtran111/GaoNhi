@@ -434,7 +434,7 @@ header .bio {
     font-size: 1.1rem;
     padding-right: 10px;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 }
 
@@ -451,3 +451,4 @@ header .bio {
   font-weight: 700;        /* chữ đậm hơn */
   letter-spacing: 0.03em;  /* nhẹ nhàng, không nhảy khung */
 }
+
