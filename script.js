@@ -1,3 +1,4 @@
+
 document.querySelectorAll('.project-item').forEach(item => {
   // Tạo nút view icon
   const btn = document.createElement('button');
@@ -213,6 +214,7 @@ document.querySelectorAll('.project-item').forEach(item => {
     floatingImg.style.opacity = '1';
   });
 });
+
 
 // === Move & toggle contact-info depending on screen size ===
 function moveContactInfo() {

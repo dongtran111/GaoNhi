@@ -452,6 +452,7 @@ header .bio {
   letter-spacing: 0.03em;  /* nhẹ nhàng, không nhảy khung */
 }
 
+
 @media (max-width: 768px) {
   html, body {
     overflow-x: hidden;
@@ -484,7 +485,3 @@ header .bio {
 
 
 }
-
-
-
-
