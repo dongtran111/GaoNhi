@@ -475,3 +475,19 @@ header .bio {
 }
 
 
+@media (max-width: 768px) {
+
+  /* Ẩn toàn bộ preview ảnh */
+  .preview-container {
+    display: none !important;
+  }
+
+  /* Không cần floating image trên mobile khi hover */
+  .floating-image {
+    display: none;
+  }
+
+}
+
+
+
