@@ -67,6 +67,7 @@ if (floatingImg && leftContent) {
 }
 
 // Ẩn floating-image khi hover vào project-item
+if (window.innerWidth > 768) {
 document.querySelectorAll('.project-item').forEach(item => {
   item.addEventListener('mouseenter', () => {
     floatingImg.style.opacity = '0';
@@ -75,6 +76,7 @@ document.querySelectorAll('.project-item').forEach(item => {
     floatingImg.style.opacity = '1';
   });
 });
+}
 
 const previewContainer = document.querySelector('.preview-container');
 
@@ -315,3 +317,5 @@ document.addEventListener('DOMContentLoaded', () => {
     aboutBtn.classList.remove('active');
   });
 });
+
+
