@@ -318,4 +318,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+function resetFloatingImage() {
+  const floatingImg = document.querySelector('.floating-image');
+  if (!floatingImg) return;
+
+  floatingImg.style.opacity = '1';
+  floatingImg.style.display = 'block';
+}
+
+window.addEventListener('pageshow', (e) => {
+  // chạy cả khi back bằng cache
+  resetFloatingImage();
+});
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    resetFloatingImage();
+  }
+});
 
