@@ -459,4 +459,19 @@ header .bio {
   }
 }
 
+@media (max-width: 768px) {
+
+  /* Tắt hiệu ứng đẩy sang trái */
+  .project-item:hover,
+  .project-item.active {
+    transform: none !important;
+  }
+
+  /* Ẩn luôn nút view nếu muốn layout tuyệt đối ổn */
+  .view-button {
+    display: none;
+  }
+
+}
+
 
