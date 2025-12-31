@@ -318,22 +318,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function resetFloatingImage() {
+// === FIX floating-image bị mất khi back (Safari mobile / BFCache) ===
+window.addEventListener('pageshow', () => {
   const floatingImg = document.querySelector('.floating-image');
   if (!floatingImg) return;
 
+  // ép browser repaint lại
+  floatingImg.style.display = 'none';
+  floatingImg.offsetHeight; // force reflow
+  floatingImg.style.display = '';
   floatingImg.style.opacity = '1';
-  floatingImg.style.display = 'block';
-}
-
-window.addEventListener('pageshow', (e) => {
-  // chạy cả khi back bằng cache
-  resetFloatingImage();
 });
-
-document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'visible') {
-    resetFloatingImage();
-  }
-});
-
